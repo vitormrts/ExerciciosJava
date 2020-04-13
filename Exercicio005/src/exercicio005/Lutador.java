@@ -23,11 +23,13 @@ public class Lutador implements UEC {
         this.nacionality = nacionality;
         this.age = age;
         this.height = height;
-        this.weight = weight;
+        this.setWeight(weight);
         this.victories = victories;
         this.losses = losses;
         this.ties = ties;
     }
+
+    
     // Métodos Getters
     public String getName() {
         return name;
@@ -89,13 +91,13 @@ public class Lutador implements UEC {
     }
 
     private void setCategory() {
-        if (this.getWeight() < 52.2) this.category = "Inválido";
+        if (this.weight < 52.2) this.category = "Inválido";
         
-        else if (this.getWeight()<= 70.3) this.category = "Leve";
+        else if (this.weight<= 70.3) this.category = "Leve";
         
-        else if (this.getWeight()<= 83.9) this.category = "Médio";
+        else if (this.weight<= 83.9) this.category = "Médio";
         
-        else if (this.getWeight() <= 120.2) this.category = "Pesado";
+        else if (this.weight <= 120.2) this.category = "Pesado";
         
         else this.category = "Inválido";
         
