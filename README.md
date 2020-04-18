@@ -1,4 +1,2 @@
 # ExerciciosJava
-Resolução dos exercícios propostos de POO Java do canal Curso em Vídeo.
-
-https://www.cursoemvideo.com/
+Resolução de exercícios na linguagem Java.
